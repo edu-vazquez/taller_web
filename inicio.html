@@ -1,0 +1,37 @@
+<html>
+ <!--esto es un comentario-->
+ <!-- en html no se usa el indentado se abre <something> y se cierra </something> -->
+    <head> 
+        <!--este es el titulo de la pagina--> 
+        <title>
+            MI PRIMERA PAGINA WEB
+            
+        </title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> <!-- aca va el link para el css-->
+    </head>
+
+<body>
+    <!--
+        crear un titulo con el siguiente texto: HOLA MUNDO en H!
+    -->
+<!-- CHALENGE
+crear un titulo h2 con el texto:
+Mi nombre es.....
+Crear un titulo h3 con el texto:
+Y estoy en Penguin porque....    
+-->
+
+    <h1>HOLA MUNDO <!--esto es un comentario--></h1>
+
+    <a href="{{ url_for('contacto') }}"> Contacto </a>    
+    
+    <h2> Mi nombre es Edu </h2>
+   
+    <h3> Y estoy en Penguin porque quiero aprender a programar con los mejores </h3>
+   
+    <img src="static/perrito.jpeg" alt="perrito con lentes" width="500" height="500">
+
+    <a href="{{ url_for('contacto') }}"> Contacto </a>
+
+</body>
+</html>
